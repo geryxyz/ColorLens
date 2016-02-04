@@ -1,0 +1,33 @@
+﻿<Window
+	x:Class = "ColorLens.MainWindow"
+	xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+	Title = "MainWindow"
+	Height = "350"
+	Width = "525"
+	Loaded = "MainWindow_OnLoaded"
+	WindowStyle = "None"
+	ResizeMode = "NoResize"
+	SizeToContent = "WidthAndHeight"
+	Background = "White" 
+	Topmost="True">
+	<StackPanel
+		Orientation = "Horizontal" >
+		<TextBlock
+			Name = "rgbDisplay"
+			Margin = "5"
+			FontSize = "16" 
+			MinWidth="125"
+			TextAlignment="Center">
+			000; 000; 000;
+		</TextBlock>
+		<Rectangle
+			Name="colorDisplay"
+			MinHeight = "20"
+			MinWidth = "20"
+			Stroke = "Black"
+			Opacity = "1"
+			Fill = "Black"
+			Margin = "5" />
+	</StackPanel>
+</Window>
